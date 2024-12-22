@@ -1,0 +1,54 @@
+.menu-btn {
+    display: block;
+    width: 70px;
+    aspect-ratio: 1;
+
+    border-radius: 10px;
+    
+    overflow: hidden;
+    
+    &:hover {
+        .menu-btn__body {
+            transform: rotateY(180deg);
+            transition: transform .2s ease-in-out;
+        }
+    }
+    
+    &__body {
+        @include full-parent-size;
+        @include absolute-for-children;
+
+        transform-style: preserve-3d;
+    }
+
+    &__front, &__back {
+        @include full-parent-size;
+        
+        background-color: $menu-background-color;
+    }
+    
+    &__front {
+        @include flex-center;
+        
+        position: relative;
+        backface-visibility: hidden;
+        z-index: 2;
+    }
+
+    &__back {
+        display: flex;
+        justify-content: space-between;
+        padding: 7px;
+        transform: rotateY(180deg);
+
+        span {
+            font-size: $font-size-low;
+            font-weight: 700;
+        }
+
+        img {
+            align-self: flex-end;
+            flex-grow: 0;
+        }
+    }
+} 

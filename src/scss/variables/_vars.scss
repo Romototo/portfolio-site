@@ -1,0 +1,40 @@
+// Screen size
+$screen-width-max: 1920;
+$screen-width-min: 280;
+
+// Grid size
+$container-width: 1300px;
+$grid-gap: 20px;
+
+// Colors
+$black: #000;
+$white: #fff;
+$grey: #EAEAEA;
+$dark-grey: #323232;
+$blue: #0BB6FF;
+$light-blue: #0bb6ff99;
+$pink:#FF055F;
+
+// Main colors
+$accent-color: $pink;
+$btn-color: $blue;
+$btn-color-hover: $light-blue;
+$btn-color-active: $black;
+$menu-background-color: $grey;
+
+// Text colors
+$text-color: $black;
+$text-color-second: $white;
+$title-color: $dark-grey;
+
+// Fonts
+$font-main: 'Montserrat', Arial, sans-serif;
+$font-scetion-number: 'ProtoSans', Arial, sans-serif;
+
+// Fonts size
+$font-size-base: 32px;
+
+$font-size-low: 0.5rem;
+$font-size-main: 1rem;
+$font-size-big: 3.75rem;
+$font-size-extra: 5rem;
