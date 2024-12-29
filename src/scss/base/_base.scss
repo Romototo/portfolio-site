@@ -1,3 +1,29 @@
+html {
+    font-family: $font-main;
+    font-size: $font-size-base;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: adaptive-font-size(8rem, 1.2rem);
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: adaptive-font-size(2rem, 1.1rem);
+    font-weight: 400;
+}
+
+section {
+    overflow: hidden;
+    padding-inline: $grid-gap;
+}
+
 .container {
     padding: $grid-gap;
 
@@ -24,30 +50,4 @@
     &::first-line{
         color: $text-color-second;
     }
-}
-
-html {
-    font-family: $font-main;
-    font-size: $font-size-base;
-    font-weight: 400;
-}
-
-h1 {
-    font-size: adaptive-font-size(8rem, 1.2rem);
-    font-weight: 300;
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-h3 {
-    font-size: adaptive-font-size(2rem, 1.1rem);
-    font-weight: 400;
-}
-
-section {
-    overflow: hidden;
-    padding-inline: $grid-gap;
 }

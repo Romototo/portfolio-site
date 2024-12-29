@@ -27,6 +27,12 @@ $text-color: $black;
 $text-color-second: $white;
 $title-color: $dark-grey;
 
+// Shadows
+$basic-shadow: box-shadow(0px 20px 30px rgba(0, 0, 0, 0.07));
+
+// Gradients
+$main-gradient: radial-gradient(30.58% 197.36% at 30.23% 113.13%, #FF542F 0%, rgba(255, 84, 47, 0) 100%), linear-gradient(272.09deg, #FF055F -2.21%, #0BB6FF 108.82%);
+
 // Fonts
 $font-main: 'Montserrat', Arial, sans-serif;
 $font-scetion-number: 'ProtoSans', Arial, sans-serif;
