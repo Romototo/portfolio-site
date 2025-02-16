@@ -19,6 +19,10 @@ h3 {
     font-weight: 400;
 }
 
+main > section:not(:last-of-type) {
+    margin-bottom: 200px;
+}
+
 section {
     overflow: hidden;
     padding-inline: $grid-gap;

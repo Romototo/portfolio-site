@@ -1,0 +1,58 @@
+.portfolio {
+
+    .container {
+        @include section-side-number($number: "2", $text: "Портфолио");
+    }
+    
+    &__menu, &__content {
+        display: flex;
+    }
+
+    input {
+        display: none;
+    }
+
+    input:first-of-type:checked ~ &__menu>&__menu-btn:first-of-type,
+    input:nth-of-type(2):checked ~ &__menu>&__menu-btn:nth-of-type(2),
+    input:last-of-type:checked ~ &__menu>&__menu-btn:last-of-type {
+        background-image: $main-gradient;
+        border-radius: 20px;
+    }
+
+    input:first-of-type:checked ~ &__content>&__item:first-of-type,
+    input:nth-of-type(2):checked ~ &__content>&__item:nth-of-type(2),
+    input:last-of-type:checked ~ &__content>&__item:last-of-type {
+        flex-grow: 1;
+        filter: brightness(1);
+    }
+    
+    &__menu {
+        background-color: $black;
+        border-radius: 20px;
+        color: $white;
+        
+    }
+
+    &__menu-btn {
+        width: 34%;
+        text-align: center;
+        font-weight: 700;
+        padding: 20px;
+    }
+
+    &__content {
+        height: 600px;
+        margin-top: 25px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    &__item {
+        width: 5%;
+        object-fit: cover;
+        filter: brightness(0.1);
+
+        transition: flex-grow .2s ease,
+                    filter .2s ease;
+    }
+}
