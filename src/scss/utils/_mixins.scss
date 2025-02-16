@@ -18,3 +18,34 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin section-side-number($number, $text)  {
+    position: relative;
+
+    &::before, &::after {
+        position: absolute;
+        top: 0;
+
+        font-family: $font-section-number;
+        font-weight: 400;
+
+        color: $text-color;
+    }
+
+    &::before {
+        content: $number;
+        font-size: 80px;
+
+        left: 100%;
+        transform: translateX(50px) translateY(30px);
+    }
+
+    &::after {
+        content: $text;
+        font-size: 32px;
+        writing-mode: vertical-rl;
+
+        left: 100%;
+        transform: translateX(110px) translateY(50px);
+    }
+}

@@ -13,7 +13,7 @@ $grey: #EAEAEA;
 $dark-grey: #323232;
 $blue: #0BB6FF;
 $light-blue: #0bb6ff99;
-$pink:#FF055F;
+$pink: #FF055F;
 
 // Main colors
 $accent-color: $pink;
@@ -32,10 +32,11 @@ $basic-shadow: box-shadow(0px 20px 30px rgba(0, 0, 0, 0.07));
 
 // Gradients
 $main-gradient: radial-gradient(30.58% 197.36% at 30.23% 113.13%, #FF542F 0%, rgba(255, 84, 47, 0) 100%), linear-gradient(272.09deg, #FF055F -2.21%, #0BB6FF 108.82%);
+$cell-gradient: radial-gradient(72.25% 85.76% at 28.999999999999996% 97%, rgb(255, 84, 47), rgba(255, 84, 47, 0) 100%), linear-gradient(-43.06deg, rgb(255, 5, 95) -2.609%, rgb(11, 182, 255) 100%);
 
 // Fonts
 $font-main: 'Montserrat', Arial, sans-serif;
-$font-scetion-number: 'ProtoSans', Arial, sans-serif;
+$font-section-number: 'ProtoSans', Arial, sans-serif;
 
 // Fonts size
 $font-size-base: 32px;
