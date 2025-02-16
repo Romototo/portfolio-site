@@ -684,3 +684,120 @@ input:first-of-type:checked ~ .portfolio__content > .portfolio__item:first-of-ty
   transition: flex-grow 0.2s ease, filter 0.2s ease;
   transition: flex-grow 0.2s ease, filter 0.2s ease, -webkit-box-flex 0.2s ease, -ms-flex-positive 0.2s ease, -webkit-filter 0.2s ease;
 }
+
+.steps .container {
+  position: relative;
+}
+.steps .container::before, .steps .container::after {
+  position: absolute;
+  top: 0;
+  font-family: "ProtoSans", Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+.steps .container::before {
+  content: "3";
+  font-size: 80px;
+  left: 100%;
+  -webkit-transform: translateX(50px) translateY(30px);
+          transform: translateX(50px) translateY(30px);
+}
+.steps .container::after {
+  content: "Веб сайт легко";
+  font-size: 32px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  left: 100%;
+  -webkit-transform: translateX(140px) translateY(50px);
+          transform: translateX(140px) translateY(50px);
+}
+.steps__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "img img zak" "img img gr1" "zap gr2 pol";
+  gap: 20px;
+}
+.steps__content > div {
+  background-color: #EAEAEA;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.steps__content > div:first-of-type {
+  grid-area: img;
+  position: relative;
+}
+.steps__content > div:first-of-type img:nth-of-type(2) {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+.steps__content > div:nth-of-type(2) {
+  grid-area: zak;
+  position: relative;
+}
+.steps__content > div:nth-of-type(2)::before, .steps__content > div:nth-of-type(2)::after {
+  position: absolute;
+  font-weight: 700;
+}
+.steps__content > div:nth-of-type(2)::before {
+  content: "1";
+  top: 10px;
+  left: 30px;
+  font-size: 140px;
+  color: rgb(11, 182, 255);
+}
+.steps__content > div:nth-of-type(2)::after {
+  content: "Закажи";
+  bottom: 30px;
+  right: 30px;
+}
+.steps__content > div:nth-of-type(3) {
+  grid-area: zap;
+  position: relative;
+}
+.steps__content > div:nth-of-type(3)::before, .steps__content > div:nth-of-type(3)::after {
+  position: absolute;
+  font-weight: 700;
+}
+.steps__content > div:nth-of-type(3)::before {
+  content: "2";
+  top: 10px;
+  left: 30px;
+  font-size: 140px;
+  color: rgb(11, 182, 255);
+}
+.steps__content > div:nth-of-type(3)::after {
+  content: "Заплати";
+  bottom: 30px;
+  right: 30px;
+}
+.steps__content > div:nth-of-type(4) {
+  grid-area: pol;
+  position: relative;
+}
+.steps__content > div:nth-of-type(4)::before, .steps__content > div:nth-of-type(4)::after {
+  position: absolute;
+  font-weight: 700;
+}
+.steps__content > div:nth-of-type(4)::before {
+  content: "3";
+  top: 10px;
+  left: 30px;
+  font-size: 140px;
+  color: rgb(11, 182, 255);
+}
+.steps__content > div:nth-of-type(4)::after {
+  content: "Получи";
+  bottom: 30px;
+  right: 30px;
+}
+.steps__content > div:nth-of-type(5) {
+  grid-area: gr1;
+  background-image: linear-gradient(46.4deg, rgb(11, 182, 255) -2.978%, rgb(126, 98, 179) 51.58%, rgb(148, 82, 165) 52.7%, rgb(255, 5, 95) 100%);
+}
+.steps__content > div:last-of-type {
+  grid-area: gr2;
+  background-image: linear-gradient(223.79deg, rgb(11, 182, 255) 5.175%, rgb(248, 150, 79) 59.996%, rgb(255, 5, 95) 100%);
+}
