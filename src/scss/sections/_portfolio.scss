@@ -6,6 +6,18 @@
     
     &__menu, &__content {
         display: flex;
+
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+
+            &>* {
+                width: 100% !important;
+            }
+
+            .portfolio__item {
+                height: 5%;
+            }
+        }
     }
 
     input {
@@ -30,7 +42,6 @@
         background-color: $black;
         border-radius: 20px;
         color: $white;
-        
     }
 
     &__menu-btn {
